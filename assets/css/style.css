@@ -190,7 +190,7 @@ li {
 .header .avatar img {
   overflow: hidden;
   width: 150px;
-  height: 150px;
+  height: 198px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -216,6 +216,7 @@ li {
   font-size: 15px;
   font-weight: 300;
 }
+
 /* === Social Icons === */
 .header .social-icons {
   margin: 0 0 34px;
@@ -243,6 +244,7 @@ li {
 .header .social-icons ul li:last-child {
   padding-right: 0;
 }
+
 /* === Navigation === */
 .header .main-nav ul {
   list-style: none;
@@ -494,6 +496,7 @@ li {
   font-weight: 300;
   color: #9c9c9c;
 }
+
 .about .resume-download {
   display: block;
   position: absolute;
@@ -918,6 +921,7 @@ li {
     -webkit-transform: translateX(260px);
     transform: translateX(260px);
   }
+
   .works .item-outer .item {
     height: 280px;
   }
