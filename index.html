@@ -1,352 +1,81 @@
 <!DOCTYPE html>
-<html lang="en-US">
-
+<html lang="tr">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <title>Emre KÜÇÜK - Personal Website</title>
-  <meta name="description" content="Emre KÜÇÜK - Personal Website" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>Emre KÜÇÜK — Software Team Lead</title>
+  <meta name="description" content="Fintech ve kurumsal yazılım alanında; mikroservis mimarisi, Kubernetes altyapıları ve büyük ölçekli platformlar geliştiren Software Team Lead.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <script>
+    (function () {
+      var stored = localStorage.getItem('theme');
+      if (stored === 'dark' || stored === 'light') {
+        document.documentElement.setAttribute('data-theme', stored);
+      }
+    })();
+  </script>
 
-  <!-- STYLESHEETS -->
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="assets/css/owl.theme.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="assets/css/magnific-popup.css" type="text/css" media="all" />
-  <link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Emre KÜÇÜK — Software Team Lead">
+  <meta property="og:description" content="Fintech ve kurumsal yazılım alanında; mikroservis mimarisi, Kubernetes altyapıları ve büyük ölçekli platformlar geliştiren Software Team Lead.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://emrekucuk.com.tr">
+  <meta property="og:image" content="https://emrekucuk.com.tr/assets/images/profile.png">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:site_name" content="Emre KÜÇÜK">
 
-  <!-- GOOGLE FONTS -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800" rel="stylesheet" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Emre KÜÇÜK — Software Team Lead">
+  <meta name="twitter:description" content="Fintech ve kurumsal yazılım alanında; mikroservis mimarisi, Kubernetes altyapıları ve büyük ölçekli platformlar geliştiren Software Team Lead.">
+  <meta name="twitter:image" content="https://emrekucuk.com.tr/assets/images/profile.png">
 
-  <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+  <!-- Canonical -->
+  <link rel="canonical" href="https://emrekucuk.com.tr">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Newsreader:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- JSON-LD Profile Schema -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "Emre KÜÇÜK",
+        "jobTitle": "Software Team Lead",
+        "url": "https://emrekucuk.com.tr",
+        "sameAs": [
+          "https://www.linkedin.com/in/kucukemree/",
+          "https://github.com/emrekucuk",
+          "https://medium.com/@emre-kucuk"
+        ],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Tarım Kredi Teknoloji"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "TR"
+        }
+      }
+    }
+  </script>
 </head>
 <body>
-  <!-- Preloader -->
-  <div class="preloader-outer">
-    <div class="preloader">
-      <div class="lines">
-        <div class="line line-1"></div>
-        <div class="line line-2"></div>
-        <div class="line line-3"></div>
-      </div>
+  <header id="siteHeader" class="site-header"></header>
+  <nav id="mobileDrawer" class="mobile-drawer" aria-label="Mobile navigation"></nav>
+  <main id="main"></main>
+  <footer id="siteFooter" class="footer"></footer>
 
-      <div class="loading-text">Loading</div>
-    </div>
-  </div>
-  <!-- Preloader end -->
-
-  <!-- Main Wrapper -->
-  <main class="wrapper">
-    <!-- Header -->
-    <header class="header pull-left">
-      <!-- Mobile menu -->
-      <div class="mobile-bar visible-sm visible-xs">
-        <div class="hamburger-menu">
-          <div class="bar"></div>
-        </div>
-      </div>
-      <!-- Mobile menu end -->
-
-      <div class="avatar">
-        <img src="assets/images/profile.png" alt="avatar" />
-      </div>
-
-      <div class="name">
-        <h1>Emre KÜÇÜK</h1>
-        <span>Backend Developer</span>
-      </div> 
-
-      <div class="name">
-        <ul>
-          <li><a href="mailto:emrekucuk74@hotmail.com">emrekucuk74@hotmail.com</a></li>
-          <li><a href="mailto:emre6774@gmail.com">emre6774@gmail.com</a></li>
-        </ul>
-      </div> 
-
-      <br />
-
-      <!-- Social Icons -->
-      <div class="social-icons">
-        <ul>
-          <li>
-            <a href="https://www.linkedin.com/in/kucukemree/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-          </li>
-          <li>
-            <a href="https://github.com/emrekucuk"><i class="fa fa-github" aria-hidden="true"></i></a>
-          </li>
-          <li>
-            <a href="https://medium.com/@emre-kucuk"><i class="fa fa-medium" aria-hidden="true"></i></a>
-          </li>
-        </ul>
-      </div>
-      <!-- Social Icons end -->
-
-      <br />
-
-      <!-- Navigation bar -->
-      <nav class="main-nav">
-        <ul class="navigation">
-          <!-- <li><a href="#about">About Me</a></li> -->
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#skills">Skills</a></li>
-        </ul>
-      </nav>
-      <!-- Navigation bar end -->
-
-      <br />
-
-      <!-- Footer Copyright -->
-      <div class="copyright">
-        <span>Content updated on 19 March 2022</span>
-        <br />
-        <span>Copyright © Designstub</span>
-      </div>
-      <!-- Footer Copyright end -->
-    </header>
-    <!-- Header end -->
-
-    <!-- Main Content -->
-    <div class="main-content pull-right">
-
-      <!-- Section About -->
-      <section id="about" class="about">
-        <div class="section-header">
-          <h2>About Me</h2>
-        </div>
-
-        <!-- Intro -->
-        <div class="intro">
-          <p>
-            I have been working as a software developer since 2020, actively contributing to project analysis, 
-            overall system architecture design, database design, and creating repositories from scratch. 
-            I take end-to-end responsibility for writing Jenkinsfiles and Dockerfiles, building Jenkins pipelines, 
-            and deploying projects to Kubernetes environments. Currently, I serve both as an active developer and 
-            a team lead, contributing not only to technical processes but also to team coordination.
-          </p>
-
-        </div>
-        <!-- Intro end -->
-      </section>
-      <!-- Section About end -->
-
-      <!-- Section Experience -->
-      <section id="experience" class="resume">
-        <div class="section-header">
-          <h2>Experience</h2>
-        </div>
-
-        <div class="row">
-
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="top-item resume-item">
-              <h2>Software Team Lead</h2>
-              <span>Tarım Kredi Teknoloji | October 2024 - Now</span>
-              <p>
-               
-              </p>
-            </div>
-          </div>
-
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="resume-project">
-                <p>
-                  I work as a Team Lead and Software Developer on the KoopPOS and KoopEnerji projects.
-                <br />
-                </p>
-              </div>
-            </div>
-
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="resume-project">
-                <h5>KoopPOS</h5>
-                <p>
-                  KoopPOS is modern, web-based cash register platform. It
-                  developed from scratch.
-                  <br />
-                  'KoopPOS Kooperatif' works on 1100+ coopertive locations.
-                  <br />
-                  'KoopPOS Market' actively under development and it is planning
-                  to be working on 2500+ market locations.
-                  <br />
-                  Languages: Dotnet 8, React
-                  <br />
-                  Running on: Kubernetes (headoffice), IIS (backoffice, store)
-                </p>
-                <br />
-
-              </div>
-            </div>
-
-          
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="top-item resume-item">
-              <h2>Software Developer</h2>
-              <span>Tarım Kredi Teknoloji | May 2023 - October 2024</span>
-            </div>
-          </div>
-
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="resume-project">
-                <h5>KoopEnerji</h5>
-                <p>
-                  KoopEnerji is modern, web-based fuel automation system. It
-                  developed from scratch. Its actively testing in the fields.
-                  <br />
-                  Tarpet is old version of KoopEnerji. It works on 1600+
-                  location. We are maintaining it for 3 years.
-                  <br />
-                  Languages: Dotnet 8, React
-                  <br />
-                  Running on: Kubernetes (headoffice), IIS (station)
-                </p>
-              </div>
-            </div>
-
-            <div class="col-md-12 col-sm-12 col-xs-12">
-              <div class="resume-project">
-                <h5>Toprak</h5>
-                <p>
-                  Toprak is a enterprise software platform that consist
-                  corporational modules. It developed from scratch. It is using
-                  by 18 companies in Tarım Kredi Group. It's backend is
-                  microservice, have microfrontend web apps and mobile
-                  application
-                  <br />
-                  Languages: Dotnet 8, React, React Native
-                  <br />
-                  Running on: Kubernetes
-                </p>
-              </div>
-            </div>
-
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="resume-item">
-              <h2>Software Developer</h2>
-              <span>Crosstech Bilişim Teknolojileri | January 2022 - March 2023</span>
-              <p>
-                I worked as a backend developer in the team that creates customized solutions.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="resume-item">
-              <h2>Software Developer</h2>
-              <span>Roboplas | August 2020 - January 2022</span>
-              <p>
-                I worked as a backend developer on developing a few modules of the ERP project.
-              </p>
-            </div>
-          </div>
-
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="resume-item">
-              <h2>Software Developer</h2>
-              <span>Roboplas | September 2019 - October 2019</span>
-              <p>
-                I worked as a backend developer on developing a few modules of the ERP project.
-              </p>
-            </div>
-          </div>
-
-        </div>
-      </section>
-      <!-- Section Experience end -->
-
-      <!-- Section Education -->
-      <section id="education" class="resume">
-        <div class="section-header">
-          <h2>Education</h2>
-        </div>
-
-        <div class="row">
-
-          <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="top-item resume-item">
-              <h2>Süleyman Demirel University (Turkey), Computer Engineering</h2>
-              <span>Bachelor's Degree | 2014 - 2019</span>
-              <p>
-                I have graduated from Süleyman Demirel University, Computer Engineering
-                at 2019.
-              </p>
-            </div>
-          </div>
-
-          <!-- <div class="col-md-12 col-sm-12 col-xs-12">
-            <div class="resume-item">
-              <h2>Barbaros Hayrettin Pasha Anatolian Maritime Vocational Higt School (Turkey)</h2>
-              <span>High School Degree | 2009 - 2013</span>
-              <p>
-                I graduated from the captain's department in 2013.
-              </p>
-            </div>
-          </div> -->
-
-        </div>
-      </section>
-      <!-- Section Education end -->
-
-
-      <!-- Section Skills -->
-      <section id="skills" class="resume">
-        <div class="section-header">
-          <h2>Skills</h2>
-        </div>
-
-        <div class="row">
-          <div class="col-md-12 col-sm-12 col-xs-12">
-
-            <ul class="tech-list">
-              <li>ASP.NET Core</li>
-              <li>ASP.NET MVC</li>
-              <li>Microservices</li>
-              <li>PostgreSQL</li>
-              <li>MS SQL Server</li>
-              <li>MongoDB</li>
-              <li>Git</li>
-              <li>GitLab</li>
-              <li>Jenkins</li>
-              <li>Linux</li>
-              <li>Docker</li>
-              <li>Kubernetes</li>
-              <li>Cloudflare</li>
-              <li>Jira</li>
-              <li>Nexus</li>
-              <li>Kafka</li>
-              <li>Serilog</li>
-              <li>Graylog</li>
-              <li>WebSocket</li>
-              <li>Hangfire</li>
-              <li>IIS</li>
-            </ul>
-
-          </div>
-        </div>
-
-
-      </section>
-      <!-- Section Skills end -->
-    </div>
-    <!-- Main Content end -->
-  </main>
-  <!-- Main Wrapper end -->
-
-  <!-- SCRIPTS -->
-  <script type="text/javascript" src="assets/js/jquery-1.12.3.min.js"></script>
-  <script type="text/javascript" src="assets/js/jquery.onepage-scroll.min.js"></script>
-  <script type="text/javascript" src="assets/js/jquery.easing.min.js"></script>
-  <script type="text/javascript" src="assets/js/jquery.backstretch.min.js"></script>
-  <script type="text/javascript" src="assets/js/jquery.filterizr.js"></script>
-  <script type="text/javascript" src="assets/js/jquery.magnific-popup.min.js"></script>
-  <script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
-  <script type="text/javascript" src="assets/js/custom.js"></script>
-  <script type="text/javascript" src="assets/js/smoothscroll.min.js"></script>
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
 </body>
-
 </html>
