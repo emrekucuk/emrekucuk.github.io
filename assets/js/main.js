@@ -1,49 +1,34 @@
-const EMAILS = ['emrekucuk74@hotmail.com', 'emre6774@gmail.com'];
+const EMAILS = ['emrekucuk74@hotmail.com'];
 const LINKEDIN_URL = 'https://www.linkedin.com/in/kucukemree/';
 const GITHUB_URL = 'https://github.com/emrekucuk';
-const MEDIUM_URL = 'https://medium.com/@emre-kucuk';
+
+const MAIL_ICON = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"></rect><path d="m3.5 6.5 8.5 7 8.5-7"></path></svg>';
+const LINKEDIN_ICON = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.48v6.26ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45Z"></path></svg>';
+const GITHUB_ICON = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c-5.52 0-10 4.48-10 10 0 4.42 2.87 8.17 6.84 9.5.5.09.68-.22.68-.48 0-.24-.01-1.02-.01-1.85-2.78.6-3.37-1.19-3.37-1.19-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.03a9.53 9.53 0 0 1 5 0c1.91-1.3 2.75-1.03 2.75-1.03.55 1.38.2 2.4.1 2.65.64.7 1.03 1.6 1.03 2.69 0 3.85-2.34 4.7-4.57 4.94.36.31.68.92.68 1.85 0 1.34-.01 2.42-.01 2.75 0 .27.18.58.69.48A10.01 10.01 0 0 0 22 12.2c0-5.52-4.48-10-10-10Z"></path></svg>';
 
 const content = {
   tr: {
     meta: {
       title: 'Emre KÜÇÜK — Software Developer',
-      description: "Fintech ve kurumsal yazılım alanında; mikroservis mimarisi, Kubernetes altyapıları ve büyük ölçekli platformlarda çalışan Software Developer.",
+      description: ""
     },
     nav: {
-      about: 'Hakkımda', experience: 'Deneyim', projects: 'Projeler',
+      experience: 'Deneyim', projects: 'Projeler',
       skills: 'Beceriler', education: 'Eğitim', contact: 'İletişim',
     },
     hero: {
       title_line: 'Senior Software Developer',
       name: 'Emre KÜÇÜK',
-      headline: 'Kurumsal ölçekte çalışan sistemler tasarlayan yazılım lideri.',
-      subtitle: "Tarım Kredi Teknoloji'de Software Team Lead olarak; binlerce lokasyonda çalışan POS, yakıt otomasyonu ve kurumsal platformların mikroservis mimarisini, DevOps süreçlerini ve geliştirici ekiplerini yönetiyorum.",
-      cta_primary: 'İletişime geç',
-      cta_secondary: 'Deneyimi gör',
+      headline: "Analiz, mimari ve DevOps'tan takım liderliğine uçtan uca sorumluluk alan yazılım geliştirici.",
+      subtitle: "2020 yılından bu yana yazılım geliştirici olarak; proje analizi, mimari ve veritabanı tasarımından sıfırdan repository oluşturmaya, Jenkinsfile/Dockerfile yazımından Kubernetes'e yayına almaya kadar uçtan uca sorumluluk alıyorum. Hem aktif geliştirici hem takım lideri olarak ekip koordinasyonuna katkı sağlıyorum.",
       card_location: 'Türkiye',
       card_langs: 'Türkçe · İngilizce',
-      proof_1: "2019'dan bu yana yazılım geliştirme ve sistem mimarisi",
-      proof_2: '1100+ lokasyonda çalışan platformların geliştirilmesi ve yönetimi',
-      proof_3: 'Mikroservis, Kubernetes ve CI/CD süreçlerinde uçtan uca sorumluluk',
-      focus_label: 'Odak alanı',
-      focus_title: 'Koddan mimariye',
-      focus_1: 'Mikroservis mimarisi',
-      focus_2: 'DevOps & Kubernetes',
-      focus_3: 'Ekip liderliği',
+      proof_1: "2020'den bu yana analiz, mimari ve veritabanı tasarımında aktif rol",
+      proof_2: 'Jenkinsfile, Dockerfile ve Kubernetes ile uçtan uca DevOps süreçleri',
+      proof_3: 'Aktif geliştirici ve takım lideri olarak ekip koordinasyonu',
       stat1_value: '6+', stat1_label: 'Yıl deneyim',
       stat2_value: '18', stat2_label: 'Şirkette kullanılan platformlar',
       stat3_value: '1100+', stat3_label: 'Aktif lokasyon',
-    },
-    about: {
-      label: 'Hakkımda',
-      title: 'Kodun mimariyle, ekibin hedefle buluştuğu yer.',
-      subtitle: '2020 yılından bu yana yazılım geliştirici olarak çalışıyor; proje analizi, sistem mimarisi ve veritabanı tasarımından sıfırdan repository kurulumuna kadar uçtan uca sorumluluk üstleniyorum. Halihazırda hem aktif geliştirici hem de takım lideri olarak görev alıyorum.',
-      col1_label: 'Backend', col1_title: 'Ölçeklenebilir Mimari',
-      col1_desc: '.NET Core ve mikroservis mimarisiyle; PostgreSQL, MS SQL Server ve MongoDB üzerinde yüksek trafikli, binlerce lokasyonda çalışan sistemler tasarlıyor ve geliştiriyorum.',
-      col2_label: 'Liderlik', col2_title: 'Takım Liderliği',
-      col2_desc: 'Aktif geliştirici olarak kod yazmaya devam ederken, ekibin teknik yol haritasını, iş planlamasını ve koordinasyonunu yönetiyorum.',
-      col3_label: 'DevOps', col3_title: 'Altyapı & Otomasyon',
-      col3_desc: "Jenkinsfile ve Dockerfile yazımından Jenkins pipeline'larına, Kubernetes'e dağıtımdan Serilog/Graylog ile gözlemlenebilirliğe kadar uçtan uca sorumluluk alıyorum.",
     },
     experience: {
       label: 'Deneyim', title: 'Kariyer geçmişi',
@@ -76,18 +61,21 @@ const content = {
           description: "Modern, web tabanlı kasa platformu. Sıfırdan geliştirildi. 'KoopPOS Market' aktif geliştirilmekte olup 2500'den fazla market lokasyonunda çalışması planlanıyor.",
           tags: ['Dotnet 10', 'React', 'Postgresql', 'Quartz', 'WebSocket'] },
         { name: 'KoopPOS Koperatif', scale: '1100+ aktif lokasyon',
-          description: "Modern, web tabanlı kasa platformu. Sıfırdan geliştirildi. 'KoopPOS Kooperatif' 1100'den fazla kooperatif lokasyonunda çalışıyor; 'KoopPOS Market' aktif geliştirilmekte olup 2500'den fazla market lokasyonunda çalışması planlanıyor.",
+          description: "Modern, web tabanlı kasa platformu. Sıfırdan geliştirildi. 'KoopPOS Kooperatif' 1100'den fazla kooperatif lokasyonunda çalışıyor.",
           tags: ['Dotnet 10', 'React', 'MS SQL', 'Hangfire', 'WebSocket', 'Kubernetes', 'IIS'] },
         { name: 'KoopEnerji', scale: '1600+ lokasyon',
           description: 'Modern, web tabanlı yakıt otomasyon sistemi. Sıfırdan geliştirildi, sahada aktif olarak test ediliyor. Eski versiyonu Tarpet, 1600\'den fazla lokasyonda çalışıyor ve 3 yıldır bakımı yapılıyor.',
           tags: ['Dotnet 10', 'React', 'MS SQL', 'WebSocket', 'Kubernetes', 'IIS'] },
         { name: 'Toprak', scale: '18 şirkette kullanımda',
           description: "Kurumsal modüllerden oluşan bir yazılım platformu. Sıfırdan geliştirildi; Tarım Kredi Grubu'ndaki 18 şirket tarafından kullanılıyor. Mikroservis backend, mikrofrontend web ve mobil uygulaması mevcut.",
-          tags: ['Dotnet 10', 'React', 'React Native', 'Mikroservis', 'Kubernetes'] },
+          tags: ['Dotnet 10', 'React', 'React Native', 'Mikroservis', 'Kubernetes'] }, 
+        { name: 'MTSK', scale: '',
+          description: "Sürücü kursları için yapılmış multi tenant yapıda olan sürücü kursu sahiplerinin, eğitmenlerinin ve adayların dökümanlarını, ders planlamalarını yönetip takip ettiği bir uygulamadır.",
+          tags: ['Dotnet 6', 'React', 'Postgresql'] },
       ],
     },
     skills: {
-      label: 'Beceriler', title: 'Teknoloji yığını',
+      label: 'Beceriler',
       items: ['ASP.NET Core', 'ASP.NET MVC', 'Microservices', 'PostgreSQL', 'MS SQL Server', 'MongoDB', 'Git', 'GitLab', 'Jenkins', 'Linux', 'Docker', 'Kubernetes', 'Cloudflare', 'Jira', 'Nexus', 'Kafka', 'Serilog', 'Graylog', 'WebSocket', 'Hangfire', 'IIS'],
     },
     education: {
@@ -100,50 +88,32 @@ const content = {
     contact: {
       label: 'İletişim', title: 'Birlikte çalışalım.',
       subtitle: 'Yeni fırsatlar, teknik danışmanlık veya iş birlikleri için bana ulaşabilirsiniz.',
-      email_label: 'E-posta', linkedin_label: 'LinkedIn', github_label: 'GitHub', medium_label: 'Medium',
+      social_label: 'Sosyal',
     },
     footer: { rights: 'Tüm hakları saklıdır.' },
   },
   en: {
     meta: {
       title: 'Emre KÜÇÜK — Software Developer',
-      description: 'Software Developer building microservice architectures, Kubernetes infrastructure, and large-scale platforms across fintech and enterprise software.',
+      description: "",
     },
     nav: {
-      about: 'About', experience: 'Experience', projects: 'Projects',
+      experience: 'Experience', projects: 'Projects',
       skills: 'Skills', education: 'Education', contact: 'Contact',
     },
     hero: {
       title_line: 'Senior Software Developer',
       name: 'Emre KÜÇÜK',
-      headline: 'Software leader building systems that run at enterprise scale.',
-      subtitle: 'As Software Team Lead at Tarım Kredi Teknoloji, I lead the microservice architecture, DevOps processes, and engineering teams behind POS, fuel automation, and enterprise platforms running across thousands of locations.',
-      cta_primary: 'Get in touch',
-      cta_secondary: 'View experience',
+      headline: 'Software developer taking end-to-end ownership from architecture to team leadership.',
+      subtitle: "Working as a software developer since 2020, I take an active role in project analysis, architecture, and database design, as well as building repositories from scratch — with end-to-end ownership from writing Jenkinsfiles and Dockerfiles to Kubernetes deployments. I currently serve as both an active developer and a team lead, contributing to team coordination.",
       card_location: 'Turkey',
       card_langs: 'Turkish · English',
-      proof_1: 'Software development and systems architecture since 2019',
-      proof_2: 'Built and maintained platforms running across 1,100+ locations',
-      proof_3: 'End-to-end ownership of microservices, Kubernetes, and CI/CD',
-      focus_label: 'Focus',
-      focus_title: 'From code to architecture',
-      focus_1: 'Microservice architecture',
-      focus_2: 'DevOps & Kubernetes',
-      focus_3: 'Team leadership',
+      proof_1: 'Active role in analysis, architecture, and database design since 2020',
+      proof_2: 'End-to-end DevOps ownership with Jenkinsfiles, Dockerfiles, and Kubernetes',
+      proof_3: 'Active developer and team lead driving team coordination',
       stat1_value: '6+', stat1_label: 'Years experience',
       stat2_value: '18', stat2_label: 'Companies running my platforms',
       stat3_value: '1,100+', stat3_label: 'Active locations',
-    },
-    about: {
-      label: 'About',
-      title: "Where architecture meets the team's goals.",
-      subtitle: "I've worked as a software developer since 2020, taking end-to-end ownership from project analysis and system architecture to database design and building repositories from scratch. I currently work as both an active developer and a team lead.",
-      col1_label: 'Backend', col1_title: 'Scalable Architecture',
-      col1_desc: 'Designing and building high-traffic systems running across thousands of locations using .NET Core, a microservice architecture, PostgreSQL, MS SQL Server, and MongoDB.',
-      col2_label: 'Leadership', col2_title: 'Team Leadership',
-      col2_desc: "While staying hands-on as an active developer, I own the team's technical roadmap, planning, and coordination.",
-      col3_label: 'DevOps', col3_title: 'Infrastructure & Automation',
-      col3_desc: 'End-to-end ownership from writing Jenkinsfiles and Dockerfiles to Jenkins pipelines, Kubernetes deployments, and observability with Serilog/Graylog.',
     },
     experience: {
       label: 'Experience', title: 'Career history',
@@ -184,10 +154,13 @@ const content = {
         { name: 'Toprak', scale: 'Used by 18 companies',
           description: 'An enterprise software platform made up of corporate modules, built from scratch and used by 18 companies within the Tarım Kredi Group. Microservice backend with a microfrontend web app and mobile application.',
           tags: ['Dotnet 10', 'React', 'React Native', 'Microservices', 'Kubernetes'] },
+        { name: 'MTSK', scale: '',
+          description: 'A multi-tenant application built for driving schools, used to manage and track the documents and lesson schedules of driving school owners, instructors, and candidates.',
+          tags: ['Dotnet 6', 'React', 'PostgreSQL'] },
       ],
     },
     skills: {
-      label: 'Skills', title: 'Technology stack',
+      label: 'Skills',
       items: ['ASP.NET Core', 'ASP.NET MVC', 'Microservices', 'PostgreSQL', 'MS SQL Server', 'MongoDB', 'Git', 'GitLab', 'Jenkins', 'Linux', 'Docker', 'Kubernetes', 'Cloudflare', 'Jira', 'Nexus', 'Kafka', 'Serilog', 'Graylog', 'WebSocket', 'Hangfire', 'IIS'],
     },
     education: {
@@ -200,13 +173,13 @@ const content = {
     contact: {
       label: 'Contact', title: "Let's work together.",
       subtitle: 'Reach out for new opportunities, technical consulting, or collaboration.',
-      email_label: 'Email', linkedin_label: 'LinkedIn', github_label: 'GitHub', medium_label: 'Medium',
+      social_label: 'Social',
     },
     footer: { rights: 'All rights reserved.' },
   },
 };
 
-const NAV_KEYS = ['about', 'experience', 'projects', 'skills', 'education', 'contact'];
+const NAV_KEYS = ['experience', 'projects', 'skills', 'education', 'contact'];
 
 const state = {
   locale: localStorage.getItem('locale') || 'tr',
@@ -267,13 +240,8 @@ function renderHero(locale) {
     <section id="top" class="hero">
       <div class="shell hero-grid">
         <div class="hero-copy reveal">
-          <h1>${t.name}<span class="hero-role">${t.title_line}</span></h1>
           <p class="hero-headline">${t.headline}</p>
           <p class="hero-subtitle">${t.subtitle}</p>
-          <div class="hero-cta">
-            <a href="#contact" class="btn btn-primary">${t.cta_primary}</a>
-            <a href="#experience" class="btn btn-ghost">${t.cta_secondary}</a>
-          </div>
           <ul class="hero-proof">
             <li>${t.proof_1}</li>
             <li>${t.proof_2}</li>
@@ -290,50 +258,15 @@ function renderHero(locale) {
               <span class="muted">${t.card_langs}</span>
             </div>
           </div>
-          <div class="focus-card">
-            <span class="focus-label">${t.focus_label}</span>
-            <strong>${t.focus_title}</strong>
-            <ul>
-              <li>${t.focus_1}</li>
-              <li>${t.focus_2}</li>
-              <li>${t.focus_3}</li>
-            </ul>
-          </div>
         </div>
       </div>
+      <!--
       <div class="shell stats-row reveal">
         <div class="stat-card"><span class="stat-value">${t.stat1_value}</span><span class="stat-label">${t.stat1_label}</span></div>
         <div class="stat-card"><span class="stat-value">${t.stat2_value}</span><span class="stat-label">${t.stat2_label}</span></div>
         <div class="stat-card"><span class="stat-value">${t.stat3_value}</span><span class="stat-label">${t.stat3_label}</span></div>
       </div>
-    </section>
-  `;
-}
-
-function renderAbout(locale) {
-  const t = content[locale].about;
-  return `
-    <section id="about" class="section">
-      <div class="shell">
-        ${sectionHeader({ label: t.label, subtitle: t.subtitle })}
-        <div class="about-grid">
-          <div class="about-col reveal">
-            <span class="about-col-label">${t.col1_label}</span>
-            <h3>${t.col1_title}</h3>
-            <p>${t.col1_desc}</p>
-          </div>
-          <div class="about-col reveal">
-            <span class="about-col-label">${t.col2_label}</span>
-            <h3>${t.col2_title}</h3>
-            <p>${t.col2_desc}</p>
-          </div>
-          <div class="about-col reveal">
-            <span class="about-col-label">${t.col3_label}</span>
-            <h3>${t.col3_title}</h3>
-            <p>${t.col3_desc}</p>
-          </div>
-        </div>
-      </div>
+      -->
     </section>
   `;
 }
@@ -391,7 +324,7 @@ function renderSkills(locale) {
   return `
     <section id="skills" class="section section-alt">
       <div class="shell">
-        ${sectionHeader({ label: t.label, title: t.title })}
+        ${sectionHeader({ label: t.label })}
         <ul class="skills-grid reveal">
           ${t.items.map((skill) => `<li class="skill-pill">${skill}</li>`).join('')}
         </ul>
@@ -422,7 +355,6 @@ function renderEducation(locale) {
 
 function renderContact(locale) {
   const t = content[locale].contact;
-  const cta = content[locale].hero.cta_primary;
   return `
     <section id="contact" class="section section-alt">
       <div class="shell">
@@ -430,23 +362,14 @@ function renderContact(locale) {
         <div class="contact-grid reveal">
           <div class="contact-links">
             <div class="contact-item">
-              <span class="contact-item-label">${t.email_label}</span>
-              ${EMAILS.map((email) => `<a href="mailto:${email}">${email}</a>`).join('')}
-            </div>
-            <div class="contact-item">
-              <span class="contact-item-label">${t.linkedin_label}</span>
-              <a href="${LINKEDIN_URL}" target="_blank" rel="noreferrer">linkedin.com/in/kucukemree</a>
-            </div>
-            <div class="contact-item">
-              <span class="contact-item-label">${t.github_label}</span>
-              <a href="${GITHUB_URL}" target="_blank" rel="noreferrer">github.com/emrekucuk</a>
-            </div>
-            <div class="contact-item">
-              <span class="contact-item-label">${t.medium_label}</span>
-              <a href="${MEDIUM_URL}" target="_blank" rel="noreferrer">medium.com/@emre-kucuk</a>
+              <span class="contact-item-label">${t.social_label}</span>
+              <div class="social-icons">
+                <a href="mailto:${EMAILS[0]}" class="icon-link" aria-label="Email">${MAIL_ICON}</a>
+                <a href="${LINKEDIN_URL}" target="_blank" rel="noreferrer" class="icon-link" aria-label="LinkedIn">${LINKEDIN_ICON}</a>
+                <a href="${GITHUB_URL}" target="_blank" rel="noreferrer" class="icon-link" aria-label="GitHub">${GITHUB_ICON}</a>
+              </div>
             </div>
           </div>
-          <a href="mailto:${EMAILS[0]}" class="btn btn-primary contact-cta">${cta}</a>
         </div>
       </div>
     </section>
@@ -456,7 +379,6 @@ function renderContact(locale) {
 function renderMain(locale) {
   return [
     renderHero(locale),
-    renderAbout(locale),
     renderExperience(locale),
     renderProjects(locale),
     renderSkills(locale),

@@ -742,6 +742,31 @@ h1, h2, h3 {
 .contact-item a:hover {
   text-decoration: underline;
 }
+.social-icons {
+  display: flex;
+  gap: 0.75rem;
+}
+.icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 0.7rem;
+  background: var(--color-mist);
+  color: var(--color-accent);
+  transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease;
+}
+.icon-link svg {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+.icon-link:hover {
+  background: var(--color-accent);
+  color: var(--color-surface);
+  transform: translateY(-2px);
+  text-decoration: none;
+}
 .contact-cta {
   justify-self: start;
 }
