@@ -33,45 +33,102 @@ const content = {
     experience: {
       label: 'Deneyim', title: 'Kariyer geçmişi',
       items: [
-         { role: 'Senior Software Developer', company: 'Tarım Kredi Teknoloji', period: 'Mart 2026 — Devam ediyor',
+        {
+          role: 'Senior Software Developer',
+          company: 'Tarım Kredi Teknoloji',
+          period: 'Mart 2026 — Devam ediyor',
           description: 'KoopPOS Market projesinde senior developer olarak görev alıyorum.',
-          tags: ['Dotnet 10', 'React', 'Postgresql', 'Nats'] },
-        { role: 'Software Team Lead', company: 'Tarım Kredi Teknoloji', period: 'Ekim 2024 — Mart 2026',
+          tags: ['Dotnet 10', 'React', 'Postgresql', 'Nats']
+        },
+        {
+          role: 'Software Team Lead',
+          company: 'Tarım Kredi Teknoloji',
+          period: 'Ekim 2024 — Mart 2026',
           description: 'KoopPOS Kooperatif ve KoopEnerji projelerinde hem aktif geliştirici hem de takım lideri olarak görev alıyorum; teknik kararlardan ekip koordinasyonuna kadar uçtan uca sorumluluk üstleniyorum.',
-          tags: ['Dotnet 10', 'React', 'Kubernetes'] },
-        { role: 'Software Developer', company: 'Tarım Kredi Teknoloji', period: 'Mayıs 2023 — Ekim 2024',
+          tags: ['Dotnet 10', 'React', 'Kubernetes']
+        },
+        {
+          role: 'Software Developer',
+          company: 'Tarım Kredi Teknoloji',
+          period: 'Mayıs 2023 — Ekim 2024',
           description: 'KoopEnerji projesinin sıfırdan geliştirilmesinde ve Toprak platformunun mikroservis mimarisinde birçok modülde aktif rol aldım.',
-          tags: ['Dotnet 10', 'React', 'MongoDB', 'Docker', 'Jenkins'] },
-        { role: 'Software Developer', company: 'Crosstech Bilişim Teknolojileri', period: 'Ocak 2022 — Mart 2023',
-          description: 'Şirkete gelen özel projeler doğrultusunda backend geliştirici olarak, özelleştirilmiş kurumsal çözümler üzerinde çalıştım.',
-          tags: ['ASP.NET Core', 'PostgreSQL', 'Docker', 'Kubernetes'] },
-        { role: 'Software Developer', company: 'Roboplas', period: 'Ağustos 2020 — Ocak 2022',
-          description: 'Kurumsal bir ERP projesinin birden fazla modülünün geliştirilmesinde backend geliştirici olarak görev aldım.',
-          tags: ['ASP.NET', 'MS SQL Server'] },
-        { role: 'Software Developer', company: 'Roboplas', period: 'Eylül 2019 — Ekim 2019',
-          description: 'Kurumsal bir ERP projesinin birden fazla modülünün geliştirilmesinde backend geliştirici olarak görev aldım.',
-          tags: ['ASP.NET', 'MS SQL Server'] },
+          tags: ['Dotnet 10', 'React', 'MongoDB', 'Docker', 'Jenkins']
+        },
+        {
+          role: 'Software Developer',
+          company: 'Crosstech Bilişim Teknolojileri',
+          period: 'Ocak 2022 — Mart 2023',
+          description: 'Şirkete gelen özel projeler doğrultusunda backend geliştirici olarak, özelleştirilmiş kurumsal çözümler üzerinde çalıştım. GuideFM ve MTSK gibi projelerin sıfırdan yazılmasında görev aldım.',
+          tags: ['ASP.NET Core', 'PostgreSQL', 'Docker', 'Kubernetes']
+        },
+        {
+          role: 'Software Developer',
+          company: 'Roboplas',
+          period: 'Ağustos 2020 — Ocak 2022',
+          description: 'Kurumsal bir ERP projesinin birden fazla modülünün geliştirilmesinde backend geliştirici olarak görev aldım. İş emri, Sipariş Teknik Formu ve içeride kullanılan CRM uygulamasının istenilen modüllerinin yeni projede sıfırdan yazılmasını gerçekleştirdik.',
+          tags: ['ASP.NET', 'MS SQL Server']
+        },
+        {
+          role: 'Software Developer',
+          company: 'Roboplas',
+          period: 'Eylül 2019 — Ekim 2019',
+          description: 'Kurumsal bir ERP projesinin birden fazla modülünün geliştirilmesinde backend geliştirici olarak görev aldım. ',
+          tags: ['ASP.NET', 'MS SQL Server']
+        },
       ],
     },
     projects: {
       label: 'Projeler', title: 'Sıfırdan geliştirdiğim platformlar',
       subtitle: 'Analiz, mimari tasarım ve geliştirmeden sahaya alınmasına kadar uçtan uca rol aldığım büyük ölçekli projeler.',
       items: [
-        { name: 'KoopPOS Market', scale: '2500+ lokasyon',
+        {
+          name: 'KoopPOS Market',
+          scale: '2500+ lokasyon',
           description: "Modern, web tabanlı kasa platformu. Sıfırdan geliştirildi. 'KoopPOS Market' aktif geliştirilmekte olup 2500'den fazla market lokasyonunda çalışması planlanıyor.",
-          tags: ['Dotnet 10', 'React', 'Postgresql', 'Quartz', 'WebSocket'] },
-        { name: 'KoopPOS Koperatif', scale: '1100+ aktif lokasyon',
+          tags: ['Dotnet 10', 'React', 'Postgresql', 'Quartz', 'WebSocket']
+        },
+        {
+          name: 'KoopPOS Koperatif',
+          scale: '1100+ aktif lokasyon',
           description: "Modern, web tabanlı kasa platformu. Sıfırdan geliştirildi. 'KoopPOS Kooperatif' 1100'den fazla kooperatif lokasyonunda çalışıyor.",
-          tags: ['Dotnet 10', 'React', 'MS SQL', 'Hangfire', 'WebSocket', 'Kubernetes', 'IIS'] },
-        { name: 'KoopEnerji', scale: '1600+ lokasyon',
+          tags: ['Dotnet 10', 'React', 'MS SQL', 'Hangfire', 'WebSocket', 'Kubernetes', 'IIS']
+        },
+        {
+          name: 'KoopEnerji',
+          scale: '1600+ lokasyon',
           description: 'Modern, web tabanlı yakıt otomasyon sistemi. Sıfırdan geliştirildi, sahada aktif olarak test ediliyor. Eski versiyonu Tarpet, 1600\'den fazla lokasyonda çalışıyor ve 3 yıldır bakımı yapılıyor.',
-          tags: ['Dotnet 10', 'React', 'MS SQL', 'WebSocket', 'Kubernetes', 'IIS'] },
-        { name: 'Toprak', scale: '18 şirkette kullanımda',
+          tags: ['Dotnet 10', 'React', 'MS SQL', 'WebSocket', 'Kubernetes', 'IIS']
+        },
+        {
+          name: 'Toprak',
+          scale: '18 şirkette kullanımda',
           description: "Kurumsal modüllerden oluşan bir yazılım platformu. Sıfırdan geliştirildi; Tarım Kredi Grubu'ndaki 18 şirket tarafından kullanılıyor. Mikroservis backend, mikrofrontend web ve mobil uygulaması mevcut.",
-          tags: ['Dotnet 10', 'React', 'React Native', 'Mikroservis', 'Kubernetes'] }, 
-        { name: 'MTSK', scale: '',
+          tags: ['Dotnet 10', 'React', 'React Native', 'Mikroservis', 'Kubernetes']
+        },
+        {
+          name: 'MTSK',
+          scale: '',
           description: "Sürücü kursları için yapılmış multi tenant yapıda olan sürücü kursu sahiplerinin, eğitmenlerinin ve adayların dökümanlarını, ders planlamalarını yönetip takip ettiği bir uygulamadır.",
-          tags: ['Dotnet 6', 'React', 'Postgresql'] },
+          tags: ['Dotnet 6', 'React', 'Postgresql']
+        },
+        {
+          name: 'GuideFM',
+          scale: '',
+          description: "Tur rehberleri için geliştirilen mobil ve web uygulamasıdır. Tur rehberlerinin ve katılımcıların uygulama içi kredi yükleme ve işlemlerini takip edebildikleri bir sistemdir.",
+          tags: ['Dotnet 6', 'React', 'Postgresql']
+        },
+        {
+          name: 'Sipariş Teknik Formu',
+          scale: '',
+          description: "Yapılacak olan robotların siparişinin alındığı, sipariş detaylarının eklendiği ve takip edildiği bir uygulamadır.",
+          tags: ['Dotnet 6', 'Angular', 'MsSql']
+        },
+        {
+          name: 'İş Emri',
+          scale: '',
+          description: "İşlerin eklendiği, atandığı, durumlarının ilerletildiği ve yorumlarının yapıldığı şirket içi bir uygulamadır.",
+          tags: ['ASP.NET MVC', 'Angular', 'MsSql']
+        },
       ],
     },
     skills: {
@@ -81,8 +138,12 @@ const content = {
     education: {
       label: 'Eğitim', title: 'Akademik geçmiş',
       items: [
-        { school: 'Süleyman Demirel Üniversitesi', degree: 'Bilgisayar Mühendisliği, Lisans', period: '2014 — 2019',
-          description: 'Süleyman Demirel Üniversitesi Bilgisayar Mühendisliği bölümünden 2019 yılında mezun oldum.' },
+        {
+          school: 'Süleyman Demirel Üniversitesi',
+          degree: 'Bilgisayar Mühendisliği, Lisans',
+          period: '2014 — 2019',
+          description: 'Süleyman Demirel Üniversitesi Bilgisayar Mühendisliği bölümünden 2019 yılında mezun oldum.'
+        },
       ],
     },
     contact: {
@@ -118,45 +179,102 @@ const content = {
     experience: {
       label: 'Experience', title: 'Career history',
       items: [
-        { role: 'Senior Software Developer', company: 'Tarım Kredi Teknoloji', period: 'Mar 2026 — Present',
+        {
+          role: 'Senior Software Developer',
+          company: 'Tarım Kredi Teknoloji',
+          period: 'Mar 2026 — Present',
           description: 'Working as a senior developer on the KoopPOS Market project.',
-          tags: ['Dotnet 10', 'React', 'PostgreSQL', 'Nats'] },
-        { role: 'Software Team Lead', company: 'Tarım Kredi Teknoloji', period: 'Oct 2024 — Mar 2026',
+          tags: ['Dotnet 10', 'React', 'PostgreSQL', 'Nats']
+        },
+        {
+          role: 'Software Team Lead',
+          company: 'Tarım Kredi Teknoloji',
+          period: 'Oct 2024 — Mar 2026',
           description: 'Worked as both an active developer and team lead on the KoopPOS Kooperatif and KoopEnerji projects — owning technical decisions end-to-end while coordinating the team.',
-          tags: ['Dotnet 10', 'React', 'Kubernetes'] },
-        { role: 'Software Developer', company: 'Tarım Kredi Teknoloji', period: 'May 2023 — Oct 2024',
+          tags: ['Dotnet 10', 'React', 'Kubernetes']
+        },
+        {
+          role: 'Software Developer',
+          company: 'Tarım Kredi Teknoloji',
+          period: 'May 2023 — Oct 2024',
           description: 'Took an active role building KoopEnerji from scratch and contributed to many modules within the Toprak platform\'s microservice architecture.',
-          tags: ['Dotnet 10', 'React', 'MongoDB', 'Docker', 'Jenkins'] },
-        { role: 'Software Developer', company: 'Crosstech Bilişim Teknolojileri', period: 'Jan 2022 — Mar 2023',
-          description: "Worked as a backend developer on custom enterprise solutions built for the company's clients.",
-          tags: ['ASP.NET Core', 'PostgreSQL', 'Docker', 'Kubernetes'] },
-        { role: 'Software Developer', company: 'Roboplas', period: 'Aug 2020 — Jan 2022',
+          tags: ['Dotnet 10', 'React', 'MongoDB', 'Docker', 'Jenkins']
+        },
+        {
+          role: 'Software Developer',
+          company: 'Crosstech Bilişim Teknolojileri',
+          period: 'Jan 2022 — Mar 2023',
+          description: "Worked as a backend developer on custom enterprise solutions built for the company's clients. Took part in building projects like GuideFM and MTSK from scratch.",
+          tags: ['ASP.NET Core', 'PostgreSQL', 'Docker', 'Kubernetes']
+        },
+        {
+          role: 'Software Developer',
+          company: 'Roboplas',
+          period: 'Aug 2020 — Jan 2022',
+          description: 'Worked as a backend developer building several modules of an enterprise ERP project. Rebuilt the required modules of the Work Order, Order Technical Form, and internal CRM application from scratch in the new project.',
+          tags: ['ASP.NET', 'MS SQL Server']
+        },
+        {
+          role: 'Software Developer',
+          company: 'Roboplas',
+          period: 'Sep 2019 — Oct 2019',
           description: 'Worked as a backend developer building several modules of an enterprise ERP project.',
-          tags: ['ASP.NET', 'MS SQL Server'] },
-        { role: 'Software Developer', company: 'Roboplas', period: 'Sep 2019 — Oct 2019',
-          description: 'Worked as a backend developer building several modules of an enterprise ERP project.',
-          tags: ['ASP.NET', 'MS SQL Server'] },
+          tags: ['ASP.NET', 'MS SQL Server']
+        },
       ],
     },
     projects: {
       label: 'Projects', title: 'Platforms built from the ground up',
       subtitle: 'Large-scale projects where I owned everything end-to-end — from analysis and architecture to development and rollout.',
       items: [
-        { name: 'KoopPOS Market', scale: '2,500+ locations',
+        {
+          name: 'KoopPOS Market',
+          scale: '2,500+ locations',
           description: "A modern, web-based POS platform built from scratch. 'KoopPOS Market' is under active development and planned to run across 2,500+ market locations.",
-          tags: ['Dotnet 10', 'React', 'PostgreSQL', 'Quartz', 'WebSocket'] },
-        { name: 'KoopPOS Kooperatif', scale: '1,100+ active locations',
+          tags: ['Dotnet 10', 'React', 'PostgreSQL', 'Quartz', 'WebSocket']
+        },
+        {
+          name: 'KoopPOS Kooperatif',
+          scale: '1,100+ active locations',
           description: "A modern, web-based POS platform built from scratch. 'KoopPOS Kooperatif' runs across 1,100+ cooperative locations; 'KoopPOS Market' is under active development and planned to run across 2,500+ market locations.",
-          tags: ['Dotnet 10', 'React', 'MS SQL', 'Hangfire', 'WebSocket', 'Kubernetes', 'IIS'] },
-        { name: 'KoopEnerji', scale: '1,600+ locations',
+          tags: ['Dotnet 10', 'React', 'MS SQL', 'Hangfire', 'WebSocket', 'Kubernetes', 'IIS']
+        },
+        {
+          name: 'KoopEnerji',
+          scale: '1,600+ locations',
           description: 'A modern, web-based fuel automation system built from scratch, actively tested in the field. Its predecessor, Tarpet, runs across 1,600+ locations and has been maintained for 3 years.',
-          tags: ['Dotnet 10', 'React', 'MS SQL', 'WebSocket', 'Kubernetes', 'IIS'] },
-        { name: 'Toprak', scale: 'Used by 18 companies',
+          tags: ['Dotnet 10', 'React', 'MS SQL', 'WebSocket', 'Kubernetes', 'IIS']
+        },
+        {
+          name: 'Toprak',
+          scale: 'Used by 18 companies',
           description: 'An enterprise software platform made up of corporate modules, built from scratch and used by 18 companies within the Tarım Kredi Group. Microservice backend with a microfrontend web app and mobile application.',
-          tags: ['Dotnet 10', 'React', 'React Native', 'Microservices', 'Kubernetes'] },
-        { name: 'MTSK', scale: '',
+          tags: ['Dotnet 10', 'React', 'React Native', 'Microservices', 'Kubernetes']
+        },
+        {
+          name: 'MTSK',
+          scale: '',
           description: 'A multi-tenant application built for driving schools, used to manage and track the documents and lesson schedules of driving school owners, instructors, and candidates.',
-          tags: ['Dotnet 6', 'React', 'PostgreSQL'] },
+          tags: ['Dotnet 6', 'React', 'PostgreSQL']
+        },
+        {
+          name: 'GuideFM',
+          scale: '',
+          description: 'A mobile and web application built for tour guides, letting guides and participants top up in-app credit and track their transactions.',
+          tags: ['Dotnet 6', 'React', 'PostgreSQL']
+        },
+        {
+          name: 'Order Technical Form',
+          scale: '',
+          description: 'An application for receiving orders for robots to be built, and for adding and tracking order details.',
+          tags: ['Dotnet 6', 'Angular', 'MS SQL']
+        },
+        {
+          name: 'Work Order',
+          scale: '',
+          description: 'An internal company application for adding and assigning tasks, progressing their status, and adding comments.',
+          tags: ['ASP.NET MVC', 'Angular', 'MS SQL']
+        },
       ],
     },
     skills: {
@@ -166,8 +284,12 @@ const content = {
     education: {
       label: 'Education', title: 'Academic background',
       items: [
-        { school: 'Süleyman Demirel University', degree: 'B.Sc. Computer Engineering', period: '2014 — 2019',
-          description: 'Graduated from Süleyman Demirel University, Department of Computer Engineering, in 2019.' },
+        {
+          school: 'Süleyman Demirel University',
+          degree: 'B.Sc. Computer Engineering',
+          period: '2014 — 2019',
+          description: 'Graduated from Süleyman Demirel University, Department of Computer Engineering, in 2019.'
+        },
       ],
     },
     contact: {

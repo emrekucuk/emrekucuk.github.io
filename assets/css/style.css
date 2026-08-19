@@ -364,12 +364,6 @@ h1, h2, h3 {
   font-size: 1rem;
   max-width: 42rem;
 }
-.hero-cta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin: 1.75rem 0;
-}
 .hero-proof {
   display: grid;
   gap: 0.6rem;
@@ -424,43 +418,6 @@ h1, h2, h3 {
 .hero-card-info .muted {
   color: var(--color-slate-500);
 }
-.focus-card {
-  background: var(--color-accent);
-  color: #fff;
-  border-radius: 1.25rem;
-  padding: 1.5rem;
-  box-shadow: var(--shadow-premium);
-}
-.focus-label {
-  display: block;
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-size: 0.7rem;
-  opacity: 0.7;
-  margin-bottom: 0.4rem;
-}
-.focus-card strong {
-  display: block;
-  font-family: var(--font-serif);
-  font-size: 1.2rem;
-  margin-bottom: 0.85rem;
-}
-.focus-card ul {
-  display: grid;
-  gap: 0.5rem;
-}
-.focus-card li {
-  font-size: 0.9rem;
-  opacity: 0.92;
-  position: relative;
-  padding-left: 1.1rem;
-}
-.focus-card li::before {
-  content: "→";
-  position: absolute;
-  left: 0;
-}
-
 .stats-row {
   margin-top: 3rem;
   display: grid;
@@ -520,40 +477,6 @@ h1, h2, h3 {
   margin-top: 0.85rem;
   color: var(--color-slate-600);
   max-width: 40rem;
-}
-
-/* ---------- About ---------- */
-.about-grid {
-  display: grid;
-  gap: 1.5rem;
-}
-.about-col {
-  background: var(--color-surface);
-  border-radius: 1.1rem;
-  padding: 1.75rem;
-  box-shadow: var(--shadow-premium);
-}
-.about-col-label {
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-size: 0.7rem;
-  font-weight: 600;
-  color: var(--color-signal);
-}
-.about-col h3 {
-  font-size: 1.15rem;
-  margin: 0.6rem 0 0.6rem;
-}
-.about-col p {
-  color: var(--color-slate-600);
-  font-size: 0.94rem;
-  margin: 0;
-}
-
-@media (min-width: 768px) {
-  .about-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
 }
 
 /* ---------- Timeline (Experience) ---------- */
@@ -767,17 +690,6 @@ h1, h2, h3 {
   transform: translateY(-2px);
   text-decoration: none;
 }
-.contact-cta {
-  justify-self: start;
-}
-
-@media (min-width: 768px) {
-  .contact-grid {
-    grid-template-columns: 1fr auto;
-    align-items: center;
-  }
-}
-
 /* ---------- Footer ---------- */
 .footer {
   border-top: 1px solid var(--color-border);
