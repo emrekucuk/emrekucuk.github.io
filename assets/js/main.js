@@ -20,12 +20,12 @@ const content = {
       title_line: 'Senior Software Developer',
       name: 'Emre KÜÇÜK',
       headline: "Analiz, mimari ve DevOps'tan takım liderliğine uçtan uca sorumluluk alan yazılım geliştirici.",
-      subtitle: "2020'den bu yana .NET ile backend ağırlıklı kurumsal yazılımlar geliştiriyorum. Analiz, mimari ve veritabanı tasarımından sıfırdan repository kurulumuna, Jenkins pipeline ve Dockerfile yazımından Kubernetes ortamında yayına almaya kadar uçtan uca sorumluluk alıyorum. Tarım Kredi Teknoloji'de 1100'den fazla lokasyonda çalışan KoopPOS ve 18 grup şirketinde kullanılan Toprak gibi platformların sıfırdan geliştirilmesinde yer aldım; yaklaşık bir buçuk yıl takım lideri olarak ekip koordinasyonunu yürüttüm.",
+      subtitle: "2020'den bu yana C# ve .NET ile backend ağırlıklı kurumsal yazılımlar geliştiriyorum. Analiz, mimari ve veritabanı tasarımından sıfırdan repository kurulumuna, Jenkins pipeline ve Dockerfile yazımından Kubernetes ortamında yayına almaya kadar uçtan uca sorumluluk alıyorum. Tarım Kredi Teknoloji'de 1100'den fazla lokasyonda çalışan KoopPOS ve 18 grup şirketinde kullanılan Toprak gibi platformların sıfırdan geliştirilmesinde yer aldım; yaklaşık bir buçuk yıl takım lideri olarak 6 kişilik ekibi yönettim.",
       card_location: 'Türkiye',
       card_langs: 'Türkçe · İngilizce',
       proof_1: "2020'den bu yana analiz, mimari ve veritabanı tasarımında aktif rol",
       proof_2: 'Jenkinsfile, Dockerfile ve Kubernetes ile uçtan uca DevOps süreçleri',
-      proof_3: 'Yaklaşık bir buçuk yıl takım lideri olarak ekip koordinasyonu',
+      proof_3: 'Yaklaşık bir buçuk yıl 6 kişilik ekibe takım liderliği',
       stat1_value: '6+', stat1_label: 'Yıl deneyim',
       stat2_value: '18', stat2_label: 'Şirkette kullanılan platformlar',
       stat3_value: '1100+', stat3_label: 'Aktif lokasyon',
@@ -37,22 +37,22 @@ const content = {
           role: 'Senior Software Developer',
           company: 'Tarım Kredi Teknoloji',
           period: 'Mart 2026 — Devam ediyor',
-          description: 'KoopPOS Market projesinde senior developer olarak görev alıyorum.',
-          tags: ['Dotnet 10', 'React', 'Postgresql', 'Nats']
+          description: 'KoopPOS Market projesinde senior backend developer olarak görev alıyorum.',
+          tags: ['.NET 10', 'Dapper', 'React', 'PostgreSQL', 'NATS']
         },
         {
           role: 'Software Team Lead',
           company: 'Tarım Kredi Teknoloji',
           period: 'Ekim 2024 — Mart 2026',
-          description: 'KoopPOS Kooperatif ve KoopEnerji projelerinde hem aktif geliştirici hem de takım lideri olarak görev alıyorum; teknik kararlardan ekip koordinasyonuna kadar uçtan uca sorumluluk üstleniyorum.',
-          tags: ['Dotnet 10', 'React', 'Kubernetes']
+          description: 'KoopPOS Kooperatif ve KoopEnerji projelerinde 6 kişilik ekipte hem aktif geliştirici hem de takım lideri olarak görev aldım; teknik kararlardan ekip koordinasyonuna kadar uçtan uca sorumluluk üstlendim.',
+          tags: ['.NET 10', 'React', 'Kubernetes']
         },
         {
           role: 'Software Developer',
           company: 'Tarım Kredi Teknoloji',
           period: 'Mayıs 2023 — Ekim 2024',
           description: 'KoopEnerji projesinin sıfırdan geliştirilmesinde ve Toprak platformunun mikroservis mimarisinde birçok modülde aktif rol aldım.',
-          tags: ['Dotnet 10', 'React', 'MongoDB', 'Docker', 'Jenkins']
+          tags: ['.NET 10', 'React', 'MongoDB', 'Docker', 'Jenkins']
         },
         {
           role: 'Software Developer',
@@ -84,56 +84,56 @@ const content = {
         {
           name: 'KoopPOS Market',
           scale: '2500+ lokasyon',
-          description: "Modern, web tabanlı kasa platformu. Sıfırdan geliştirildi. 'KoopPOS Market' aktif geliştirilmekte olup 2500'den fazla market lokasyonunda çalışması planlanıyor.",
-          tags: ['Dotnet 10', 'React', 'Postgresql', 'Quartz', 'WebSocket']
+          description: "Modern, web tabanlı kasa platformu; 2500'den fazla market lokasyonunda çalışması planlanıyor. Platformun sıfırdan geliştirilmesinde backend geliştirici olarak görev alıyorum.",
+          tags: ['.NET 10', 'React', 'PostgreSQL', 'Quartz', 'WebSocket']
         },
         {
-          name: 'KoopPOS Koperatif',
+          name: 'KoopPOS Kooperatif',
           scale: '1100+ aktif lokasyon',
-          description: "Modern, web tabanlı kasa platformu. Sıfırdan geliştirildi. 'KoopPOS Kooperatif' 1100'den fazla kooperatif lokasyonunda çalışıyor.",
-          tags: ['Dotnet 10', 'React', 'MS SQL', 'Hangfire', 'WebSocket', 'Kubernetes', 'IIS']
+          description: "Modern, web tabanlı kasa platformu; 1100'den fazla kooperatif lokasyonunda çalışıyor. Sıfırdan yazılmasında backend geliştirici olarak tüm katmanlarda geliştirme yaptım; iş planlaması, CI/CD ve Kubernetes'e yayına alma süreçlerinde görev aldım.",
+          tags: ['.NET 10', 'React', 'MS SQL Server', 'Hangfire', 'WebSocket', 'Kubernetes', 'IIS']
         },
         {
           name: 'KoopEnerji',
           scale: '1600+ lokasyon',
-          description: 'Modern, web tabanlı yakıt otomasyon sistemi. Sıfırdan geliştirildi, sahada aktif olarak test ediliyor. Eski versiyonu Tarpet, 1600\'den fazla lokasyonda çalışıyor ve 3 yıldır bakımı yapılıyor.',
-          tags: ['Dotnet 10', 'React', 'MS SQL', 'WebSocket', 'Kubernetes', 'IIS']
+          description: "Modern, web tabanlı yakıt otomasyon sistemi; sahada aktif olarak test ediliyor. Eski versiyonu Tarpet 1600'den fazla lokasyonda çalışıyor ve 3 yıldır bakımı yapılıyor. Backend'in sıfırdan yazılmasında, iş planlamasında, CI/CD adımlarında ve Kubernetes ortamında yayına alınmasında yer aldım.",
+          tags: ['.NET 10', 'React', 'MS SQL Server', 'WebSocket', 'Kubernetes', 'IIS']
         },
         {
           name: 'Toprak',
           scale: '18 şirkette kullanımda',
-          description: "Kurumsal modüllerden oluşan bir yazılım platformu. Sıfırdan geliştirildi; Tarım Kredi Grubu'ndaki 18 şirket tarafından kullanılıyor. Mikroservis backend, mikrofrontend web ve mobil uygulaması mevcut.",
-          tags: ['Dotnet 10', 'React', 'React Native', 'Mikroservis', 'Kubernetes']
+          description: "Kurumsal modüllerden oluşan platform; Tarım Kredi Grubu'ndaki 18 şirket tarafından kullanılıyor. Mikroservis backend, mikrofrontend web ve mobil uygulaması mevcut. Sıfırdan yazılmasında backend geliştirici olarak iş planlamasından CI/CD ve Kubernetes'e yayına almaya kadar tüm adımlarda görev aldım.",
+          tags: ['.NET 10', 'React', 'Microservices', 'Kubernetes']
         },
         {
           name: 'MTSK',
           scale: '',
           description: "Sürücü kursları için yapılmış multi tenant yapıda olan sürücü kursu sahiplerinin, eğitmenlerinin ve adayların dökümanlarını, ders planlamalarını yönetip takip ettiği bir uygulamadır.",
-          tags: ['Dotnet 6', 'React', 'Postgresql']
+          tags: ['.NET 6', 'React', 'PostgreSQL']
         },
         {
           name: 'GuideFM',
           scale: '',
           description: "Tur rehberleri için geliştirilen mobil ve web uygulamasıdır. Tur rehberlerinin ve katılımcıların uygulama içi kredi yükleme ve işlemlerini takip edebildikleri bir sistemdir.",
-          tags: ['Dotnet 6', 'React', 'Postgresql']
+          tags: ['.NET 6', 'React', 'PostgreSQL']
         },
         {
           name: 'Sipariş Teknik Formu',
           scale: '',
           description: "Yapılacak olan robotların siparişinin alındığı, sipariş detaylarının eklendiği ve takip edildiği bir uygulamadır.",
-          tags: ['Dotnet 6', 'Angular', 'MsSql']
+          tags: ['.NET 6', 'Angular', 'MS SQL Server']
         },
         {
           name: 'İş Emri',
           scale: '',
           description: "İşlerin eklendiği, atandığı, durumlarının ilerletildiği ve yorumlarının yapıldığı şirket içi bir uygulamadır.",
-          tags: ['ASP.NET MVC', 'Angular', 'MsSql']
+          tags: ['ASP.NET MVC', 'Angular', 'MS SQL Server']
         },
       ],
     },
     skills: {
       label: 'Beceriler',
-      items: ['ASP.NET Core', 'ASP.NET MVC', 'Microservices', 'PostgreSQL', 'MS SQL Server', 'MongoDB', 'Git', 'GitLab', 'Jenkins', 'Linux', 'Docker', 'Kubernetes', 'Cloudflare', 'Jira', 'Nexus', 'Kafka', 'Serilog', 'Graylog', 'WebSocket', 'Hangfire', 'IIS'],
+      items: ['C#', '.NET', 'ASP.NET Core', 'ASP.NET MVC', 'Entity Framework Core', 'Dapper', 'REST API', 'Clean Architecture', 'Microservices', 'SQL', 'MS SQL Server', 'PostgreSQL', 'MongoDB', 'CI/CD', 'Jenkins', 'Docker', 'Kubernetes', 'Git', 'GitLab', 'Linux', 'Kafka', 'WebSocket', 'Hangfire', 'Serilog', 'Graylog', 'Nexus', 'Cloudflare', 'Jira', 'IIS'],
     },
     education: {
       label: 'Eğitim', title: 'Akademik geçmiş',
@@ -166,12 +166,12 @@ const content = {
       title_line: 'Senior Software Developer',
       name: 'Emre KÜÇÜK',
       headline: 'Software developer taking end-to-end ownership from architecture to team leadership.',
-      subtitle: "Since 2020, I have been building backend-focused enterprise software with .NET. I take end-to-end ownership — from analysis, architecture, and database design to setting up repositories from scratch, writing Jenkins pipelines and Dockerfiles, and deploying to Kubernetes. At Tarım Kredi Teknoloji, I helped build platforms from the ground up, such as KoopPOS, running across 1,100+ locations, and Toprak, used by 18 group companies; I also led team coordination as a team lead for about a year and a half.",
+      subtitle: "Since 2020, I have been building backend-focused enterprise software with C# and .NET. I take end-to-end ownership — from analysis, architecture, and database design to setting up repositories from scratch, writing Jenkins pipelines and Dockerfiles, and deploying to Kubernetes. At Tarım Kredi Teknoloji, I helped build platforms from the ground up, such as KoopPOS, running across 1,100+ locations, and Toprak, used by 18 group companies; I also led a team of 6 as team lead for about a year and a half.",
       card_location: 'Turkey',
       card_langs: 'Turkish · English',
       proof_1: 'Active role in analysis, architecture, and database design since 2020',
       proof_2: 'End-to-end DevOps ownership with Jenkinsfiles, Dockerfiles, and Kubernetes',
-      proof_3: 'About a year and a half leading team coordination as team lead',
+      proof_3: 'About a year and a half leading a team of 6 as team lead',
       stat1_value: '6+', stat1_label: 'Years experience',
       stat2_value: '18', stat2_label: 'Companies running my platforms',
       stat3_value: '1,100+', stat3_label: 'Active locations',
@@ -183,22 +183,22 @@ const content = {
           role: 'Senior Software Developer',
           company: 'Tarım Kredi Teknoloji',
           period: 'Mar 2026 — Present',
-          description: 'Working as a senior developer on the KoopPOS Market project.',
-          tags: ['Dotnet 10', 'React', 'PostgreSQL', 'Nats']
+          description: 'Working as a senior backend developer on the KoopPOS Market project.',
+          tags: ['.NET 10', 'Dapper', 'React', 'PostgreSQL', 'NATS']
         },
         {
           role: 'Software Team Lead',
           company: 'Tarım Kredi Teknoloji',
           period: 'Oct 2024 — Mar 2026',
-          description: 'Worked as both an active developer and team lead on the KoopPOS Kooperatif and KoopEnerji projects — owning technical decisions end-to-end while coordinating the team.',
-          tags: ['Dotnet 10', 'React', 'Kubernetes']
+          description: 'Worked as both an active developer and team lead of a 6-person team on the KoopPOS Kooperatif and KoopEnerji projects — owning technical decisions end-to-end while coordinating the team.',
+          tags: ['.NET 10', 'React', 'Kubernetes']
         },
         {
           role: 'Software Developer',
           company: 'Tarım Kredi Teknoloji',
           period: 'May 2023 — Oct 2024',
           description: 'Took an active role building KoopEnerji from scratch and contributed to many modules within the Toprak platform\'s microservice architecture.',
-          tags: ['Dotnet 10', 'React', 'MongoDB', 'Docker', 'Jenkins']
+          tags: ['.NET 10', 'React', 'MongoDB', 'Docker', 'Jenkins']
         },
         {
           role: 'Software Developer',
@@ -230,56 +230,56 @@ const content = {
         {
           name: 'KoopPOS Market',
           scale: '2,500+ locations',
-          description: "A modern, web-based POS platform built from scratch. 'KoopPOS Market' is under active development and planned to run across 2,500+ market locations.",
-          tags: ['Dotnet 10', 'React', 'PostgreSQL', 'Quartz', 'WebSocket']
+          description: "A modern, web-based POS platform planned to run across 2,500+ market locations. I work as a backend developer building the platform from scratch.",
+          tags: ['.NET 10', 'React', 'PostgreSQL', 'Quartz', 'WebSocket']
         },
         {
           name: 'KoopPOS Kooperatif',
           scale: '1,100+ active locations',
-          description: "A modern, web-based POS platform built from scratch. 'KoopPOS Kooperatif' runs across 1,100+ cooperative locations; 'KoopPOS Market' is under active development and planned to run across 2,500+ market locations.",
-          tags: ['Dotnet 10', 'React', 'MS SQL', 'Hangfire', 'WebSocket', 'Kubernetes', 'IIS']
+          description: "A modern, web-based POS platform running across 1,100+ cooperative locations. As a backend developer, I worked across all backend layers while building it from scratch, and took part in work planning, CI/CD, and Kubernetes deployments.",
+          tags: ['.NET 10', 'React', 'MS SQL Server', 'Hangfire', 'WebSocket', 'Kubernetes', 'IIS']
         },
         {
           name: 'KoopEnerji',
           scale: '1,600+ locations',
-          description: 'A modern, web-based fuel automation system built from scratch, actively tested in the field. Its predecessor, Tarpet, runs across 1,600+ locations and has been maintained for 3 years.',
-          tags: ['Dotnet 10', 'React', 'MS SQL', 'WebSocket', 'Kubernetes', 'IIS']
+          description: 'A modern, web-based fuel automation system, actively tested in the field. Its predecessor, Tarpet, runs across 1,600+ locations and has been maintained for 3 years. I took part in building the backend from scratch, work planning, CI/CD, and deployment to Kubernetes.',
+          tags: ['.NET 10', 'React', 'MS SQL Server', 'WebSocket', 'Kubernetes', 'IIS']
         },
         {
           name: 'Toprak',
           scale: 'Used by 18 companies',
-          description: 'An enterprise software platform made up of corporate modules, built from scratch and used by 18 companies within the Tarım Kredi Group. Microservice backend with a microfrontend web app and mobile application.',
-          tags: ['Dotnet 10', 'React', 'React Native', 'Microservices', 'Kubernetes']
+          description: 'An enterprise platform made up of corporate modules, used by 18 companies within the Tarım Kredi Group, with a microservice backend, a microfrontend web app, and a mobile application. As a backend developer, I was involved in every step of building it from scratch — from work planning to CI/CD and Kubernetes deployments.',
+          tags: ['.NET 10', 'React', 'Microservices', 'Kubernetes']
         },
         {
           name: 'MTSK',
           scale: '',
           description: 'A multi-tenant application built for driving schools, used to manage and track the documents and lesson schedules of driving school owners, instructors, and candidates.',
-          tags: ['Dotnet 6', 'React', 'PostgreSQL']
+          tags: ['.NET 6', 'React', 'PostgreSQL']
         },
         {
           name: 'GuideFM',
           scale: '',
           description: 'A mobile and web application built for tour guides, letting guides and participants top up in-app credit and track their transactions.',
-          tags: ['Dotnet 6', 'React', 'PostgreSQL']
+          tags: ['.NET 6', 'React', 'PostgreSQL']
         },
         {
           name: 'Order Technical Form',
           scale: '',
           description: 'An application for receiving orders for robots to be built, and for adding and tracking order details.',
-          tags: ['Dotnet 6', 'Angular', 'MS SQL']
+          tags: ['.NET 6', 'Angular', 'MS SQL Server']
         },
         {
           name: 'Work Order',
           scale: '',
           description: 'An internal company application for adding and assigning tasks, progressing their status, and adding comments.',
-          tags: ['ASP.NET MVC', 'Angular', 'MS SQL']
+          tags: ['ASP.NET MVC', 'Angular', 'MS SQL Server']
         },
       ],
     },
     skills: {
       label: 'Skills',
-      items: ['ASP.NET Core', 'ASP.NET MVC', 'Microservices', 'PostgreSQL', 'MS SQL Server', 'MongoDB', 'Git', 'GitLab', 'Jenkins', 'Linux', 'Docker', 'Kubernetes', 'Cloudflare', 'Jira', 'Nexus', 'Kafka', 'Serilog', 'Graylog', 'WebSocket', 'Hangfire', 'IIS'],
+      items: ['C#', '.NET', 'ASP.NET Core', 'ASP.NET MVC', 'Entity Framework Core', 'Dapper', 'REST API', 'Clean Architecture', 'Microservices', 'SQL', 'MS SQL Server', 'PostgreSQL', 'MongoDB', 'CI/CD', 'Jenkins', 'Docker', 'Kubernetes', 'Git', 'GitLab', 'Linux', 'Kafka', 'WebSocket', 'Hangfire', 'Serilog', 'Graylog', 'Nexus', 'Cloudflare', 'Jira', 'IIS'],
     },
     education: {
       label: 'Education', title: 'Academic background',
