@@ -9,8 +9,8 @@ const GITHUB_ICON = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2
 const content = {
   tr: {
     meta: {
-      title: 'Emre KÜÇÜK — Software Developer',
-      description: ""
+      title: 'Emre KÜÇÜK — Senior Software Developer',
+      description: "C# ve .NET ile backend ağırlıklı kurumsal yazılımlar geliştiren Senior Software Developer. KoopPOS, KoopEnerji ve Toprak gibi büyük ölçekli platformlar."
     },
     nav: {
       experience: 'Deneyim', projects: 'Projeler',
@@ -108,25 +108,25 @@ const content = {
         {
           name: 'MTSK',
           scale: '',
-          description: "Sürücü kursları için yapılmış multi tenant yapıda olan sürücü kursu sahiplerinin, eğitmenlerinin ve adayların dökümanlarını, ders planlamalarını yönetip takip ettiği bir uygulamadır.",
+          description: "Sürücü kursları için yapılmış multi tenant yapıda olan sürücü kursu sahiplerinin, eğitmenlerinin ve adayların dökümanlarını, ders planlamalarını yönetip takip ettiği bir uygulamadır. Backend'inin sıfırdan geliştirilmesinde backend geliştirici olarak görev aldım.",
           tags: ['.NET 6', 'React', 'PostgreSQL']
         },
         {
           name: 'GuideFM',
           scale: '',
-          description: "Tur rehberleri için geliştirilen mobil ve web uygulamasıdır. Tur rehberlerinin ve katılımcıların uygulama içi kredi yükleme ve işlemlerini takip edebildikleri bir sistemdir.",
+          description: "Tur rehberleri için geliştirilen mobil ve web uygulamasıdır. Tur rehberlerinin ve katılımcıların uygulama içi kredi yükleme ve işlemlerini takip edebildikleri bir sistemdir. Backend'inin sıfırdan geliştirilmesinde backend geliştirici olarak görev aldım.",
           tags: ['.NET 6', 'React', 'PostgreSQL']
         },
         {
           name: 'Sipariş Teknik Formu',
           scale: '',
-          description: "Yapılacak olan robotların siparişinin alındığı, sipariş detaylarının eklendiği ve takip edildiği bir uygulamadır.",
+          description: "Yapılacak olan robotların siparişinin alındığı, sipariş detaylarının eklendiği ve takip edildiği bir uygulamadır. Yeni projede sıfırdan yazılmasında backend geliştirici olarak görev aldım.",
           tags: ['.NET 6', 'Angular', 'MS SQL Server']
         },
         {
           name: 'İş Emri',
           scale: '',
-          description: "İşlerin eklendiği, atandığı, durumlarının ilerletildiği ve yorumlarının yapıldığı şirket içi bir uygulamadır.",
+          description: "İşlerin eklendiği, atandığı, durumlarının ilerletildiği ve yorumlarının yapıldığı şirket içi bir uygulamadır. Yeni projede sıfırdan yazılmasında backend geliştirici olarak görev aldım.",
           tags: ['ASP.NET MVC', 'Angular', 'MS SQL Server']
         },
       ],
@@ -155,8 +155,8 @@ const content = {
   },
   en: {
     meta: {
-      title: 'Emre KÜÇÜK — Software Developer',
-      description: "",
+      title: 'Emre KÜÇÜK — Senior Software Developer',
+      description: "Senior Software Developer building backend-focused enterprise software with C# and .NET — large-scale platforms like KoopPOS, KoopEnerji and Toprak.",
     },
     nav: {
       experience: 'Experience', projects: 'Projects',
@@ -254,25 +254,25 @@ const content = {
         {
           name: 'MTSK',
           scale: '',
-          description: 'A multi-tenant application built for driving schools, used to manage and track the documents and lesson schedules of driving school owners, instructors, and candidates.',
+          description: 'A multi-tenant application built for driving schools, used to manage and track the documents and lesson schedules of driving school owners, instructors, and candidates. I worked as a backend developer building its backend from scratch.',
           tags: ['.NET 6', 'React', 'PostgreSQL']
         },
         {
           name: 'GuideFM',
           scale: '',
-          description: 'A mobile and web application built for tour guides, letting guides and participants top up in-app credit and track their transactions.',
+          description: 'A mobile and web application built for tour guides, letting guides and participants top up in-app credit and track their transactions. I worked as a backend developer building its backend from scratch.',
           tags: ['.NET 6', 'React', 'PostgreSQL']
         },
         {
           name: 'Order Technical Form',
           scale: '',
-          description: 'An application for receiving orders for robots to be built, and for adding and tracking order details.',
+          description: 'An application for receiving orders for robots to be built, and for adding and tracking order details. I worked as a backend developer rebuilding it from scratch in the new project.',
           tags: ['.NET 6', 'Angular', 'MS SQL Server']
         },
         {
           name: 'Work Order',
           scale: '',
-          description: 'An internal company application for adding and assigning tasks, progressing their status, and adding comments.',
+          description: 'An internal company application for adding and assigning tasks, progressing their status, and adding comments. I worked as a backend developer rebuilding it from scratch in the new project.',
           tags: ['ASP.NET MVC', 'Angular', 'MS SQL Server']
         },
       ],
@@ -578,7 +578,7 @@ function applyMeta(locale) {
   document.documentElement.lang = locale;
   document.title = t.title;
   const desc = document.querySelector('meta[name="description"]');
-  if (desc) desc.setAttribute('content', t.description);
+  if (desc && t.description) desc.setAttribute('content', t.description);
 }
 
 function renderAll() {
